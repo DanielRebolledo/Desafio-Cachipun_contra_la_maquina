@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <!-- Bootstrap -->
+    <!-- Googlefont -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- estilos CSS -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <title>Cachipún</title>
+
+</head>
+<body>
+
+    <div class="contenedor">
+        <header class="header">
+            <img class="header__img" src="assets/img/cachipun_logo.png" alt="">
+            <div class="header__jugadores">
+                <p id="nombreJugador">Jugador</p>
+                <p id="puntajeJugador">0</p>
+                <img class="versus__img" src="assets/img/vs.png" alt="">
+                <p>Máquina</p>
+                <p id="puntajeMaquina">0</p>
+            </div>
+        </header>
+
+        <!-- Resultado -->
+        <h3 id ="resultadoCachipun"><span>Empecemos!</span></h3>
+
+        <!-- Jugadas -->
+        <div class="jugadas">
+            <img class="opcionJugador" id="opcionJugador" src="assets/img/piedra.svg" alt="">
+            <img class="opcionMaquina" id="opcionMaquina" src="assets/img/0.svg" alt="">
+        </div>
+        
+        <!-- Botones -->
+        <div class="botones">
+            <button class="btn btn-piedra" id="piedraBtn" type="button"></button>
+            <button class="btn btn-papel"  id="papelBtn"  type="button"></button>
+            <button class="btn btn-tijera" id="tijeraBtn" type="button"></button>
+        </div>
+        <button class="btn-reset" id="JugarDeNuevo" type="button">Jugar de nuevo</button>
+        
+    </div>
+
+    <!-- Script.JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

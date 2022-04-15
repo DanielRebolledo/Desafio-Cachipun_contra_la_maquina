@@ -1,0 +1,168 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/cachipun_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3{
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.header{
+    width: 100%;
+    text-align: center;
+}
+
+.header > img{
+    width: 100%;
+    display: block;
+    
+}
+
+.header__jugadores{
+    width: 70%;
+    max-width: 430px;
+    margin: auto;
+    border-radius: 50px;
+    border: 2px solid #e8724a;
+    padding: 5px 15px;
+    background: rgb(238,108,33);
+    background: linear-gradient(0deg, rgba(238,108,33,1) 0%, rgba(244,173,70,1) 100%);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.versus__img{
+    max-width: 20%;
+    
+}
+
+/* Jugadas */
+
+.jugadas{
+    width: 100%;
+    height: 150px;
+    margin: 45px auto ;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.opcionJugador{
+    transform: rotate(90deg);
+}
+
+.cachipun{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.botones{
+    width: 100%;
+    max-width: 430px;
+    margin: auto;
+    padding: 10px 10px;
+    background-color: #ffffff;
+    border-radius: 100px;
+    position: relative;
+    bottom: 0px;
+}
+
+.btn{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 10px solid #ffffff;
+    background-position: center;
+    transition: 0.3s ease-in-out all;
+
+    
+    -webkit-box-shadow: 0px 6px 5px 0px rgba(103,95,210,0.4); 
+    box-shadow: 0px 6px 5px 0px rgba(103,95,210,0.4);
+    
+}
+
+
+.btn:focus{
+    background-color: #675fd2;
+}
+
+.btn-piedra{
+    background-image: url("../img/piedra.svg");
+    background-color: #f3b22b;
+}
+
+
+
+.btn-papel{
+    background-image: url("../img/papel.svg");
+    background-color: #f05656;
+}
+
+.btn-tijera{
+    background-image: url("../img/tijera.svg");
+    background-color: #a7ce85;
+}
+
+.btn-reset{
+    font-size: 18px;
+    background-color: #e8724a;
+    color: white;
+    border: none;
+    margin-top: 25px;
+    padding: 15px 25px;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out all;
+}
+
+.btn-reset:hover{
+    -webkit-box-shadow: 0px 6px 30px 0px #3A3575; 
+    box-shadow: 0px 6px 30px 0px #3A3575;
+}
+
+
+/* Mediaqueries */
+
+@media (min-width: 768px) {
+    p{
+        font-size: 22px
+    }       
+
+    .botones{
+        padding: 15px 0px;
+    }
+
+    .btn{
+        width: 100px;
+        height: 100px;
+    }
+
+    .btn:hover{
+        cursor: pointer;
+        -webkit-box-shadow: 0px 9px 14px 2px rgba(103,95,210,0.41); 
+        box-shadow: 0px 9px 14px 2px rgba(103,95,210,0.41);
+        transform: rotate(-15deg);
+        
+    }
+
+};
